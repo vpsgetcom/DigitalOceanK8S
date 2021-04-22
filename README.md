@@ -71,10 +71,13 @@ kubectl get svc nginx-ingress-controller -o jsonpath="{.status.loadBalancer.ingr
 Check URL: http://159.***.2**.45/test 
 
 
+
+
+
 -------
 
 
-OK let's deploy some helm chart; for example elasticsearch.
+OK let's also deploy some helm chart; for example elasticsearch.
 
 Check helm version and go ahead.
 
