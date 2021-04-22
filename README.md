@@ -45,6 +45,9 @@ Save kubectl config:
 ```
 doctl kubernetes cluster kubeconfig save tf-k8s-fd8b29cca0
 ```
+You should be able to access kubernetes dashboard from digitalocean portal, like: 
+ https://cloud.digitalocean.com/kubernetes/clusters/.../.../#/deployment?namespace=_all
+
 
 Check that there already echo app [hashicorp/http-echo] :
 [described in \kubernetes-config\main.tf ]
@@ -57,10 +60,7 @@ kubectl get pods --namespace=test
  test-7b6cc57b45-n9n4b                                      1/1     Running   0          3m46s
 ```
 
-You should be able to access kubernetes dashboard from digitalocean portal, like: 
- https://cloud.digitalocean.com/kubernetes/clusters/.../.../#/deployment?namespace=_all
-
-Check your LoadBalancer IP: 
+Check your LoadBalancer IP in orser to get pubIP and test our http-echo app: 
 ```
 get svc ingress-nginx-controller -o jsonpath="{.status.loadBalancer.ingress[0].ip}" --all-namespaces
 
