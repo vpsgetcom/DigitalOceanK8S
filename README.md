@@ -95,7 +95,6 @@ helm version
 ```
 
 ```
-helm init
 helm repo add elastic https://helm.elastic.co
 helm repo update
 helm install elasticsearch elastic/elasticsearch  --namespace=test
