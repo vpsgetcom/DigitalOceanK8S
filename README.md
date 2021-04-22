@@ -35,11 +35,11 @@ terraform plan
 terraform apply
 
 ```
-
+```
 #OUT:
 #cluster_name = "tf-k8s-fd8b29cca0"
 #kubeconfig_path = "none"
-
+```
 Save kubectl config:
 
 ```
