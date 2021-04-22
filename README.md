@@ -49,7 +49,7 @@ You should be able to access kubernetes dashboard from digitalocean portal, like
  https://cloud.digitalocean.com/kubernetes/clusters/.../.../#/deployment?namespace=_all
 
 
-Check that there already echo app [hashicorp/http-echo] :
+**Check that there already echo app [hashicorp/http-echo] deployed** :
 [described in \kubernetes-config\main.tf ]
 
 ```
@@ -70,7 +70,7 @@ kubectl get svc nginx-ingress-controller -o jsonpath="{.status.loadBalancer.ingr
 ```
 Check URL: http://159.***.2**.45/test 
 
-
+thats all:)
 
 
 <br>
@@ -85,7 +85,7 @@ Check URL: http://159.***.2**.45/test
 
 
 
-OK let's also deploy some helm chart; for example elasticsearch.
+Optionally let's also deploy some helm chart; for example elasticsearch.
 
 Check helm version and go ahead.
 
