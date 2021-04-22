@@ -60,10 +60,6 @@ kubectl get pods --namespace=test
 You should be able to access kubernetes dashboard from digitalocean portal, like: 
  https://cloud.digitalocean.com/kubernetes/clusters/.../.../#/deployment?namespace=_all
 
-Also you may download kubeconfig file from DO portal and get your k8s FQDN: 
-    server: https://3e0a2eef-f56f-4115-aff2-9bbc7d959c33.k8s.ondigitalocean.com
-
-
 Check your LoadBalancer IP: 
 ```
 get svc ingress-nginx-controller -o jsonpath="{.status.loadBalancer.ingress[0].ip}" --all-namespaces
