@@ -62,7 +62,7 @@ kubectl get pods --namespace=test
 
 Check your LoadBalancer IP in orser to get pubIP and test our http-echo app: 
 ```
-get svc ingress-nginx-controller -o jsonpath="{.status.loadBalancer.ingress[0].ip}" --all-namespaces
+kubectl get svc nginx-ingress-controller -o jsonpath="{.status.loadBalancer.ingress[0].ip}" --namespace=test
 
  # 
  # nginx-ingress-controller                   LoadBalancer   10.245.82.255    159.***.2**.45   80:32105/TCP,443:30485/TCP   83m
